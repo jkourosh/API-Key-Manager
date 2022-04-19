@@ -14,9 +14,9 @@ A little HTML, JS and CSS, you can build a web interface, style it, and add an i
 
 ![my space](./assets/img/preview.png)
 
-## Deploy your Space
+## Deploy your Key Manager
 
-You can deploy, or publish your Space to the web using Static Web Apps.
+You can deploy, or publish your's .
 
 1. Fork this repo
 2. Review  through the Code then creating your Idea.
