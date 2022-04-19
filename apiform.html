@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/apiform.css" />
+		<title>API</title>
+	</head>
+	<body>
+		<header>
+			<h1>JS-Part 1</h1>
+		</header>
+		<main class="container">
+			<div class="hero">
+				<div class="hero__left">
+					<form action="" method="GET">
+						<div class="hero__left--text">
+							<label for="username">User Name</label>
+							<input type="text" name="idInp" id="idInp" hidden/>
+							<input type="text" name="username" id="username" />
+						</div>
+						<div class="hero__left--text">
+							<label for="apikey">Api Key</label>
+							<input type="text" name="apikey" id="apikey" />
+						</div>
+						<div class="hero__left--text">
+							<label for="apisecret">Api Secret</label>
+							<input type="text" name="apisecret" id="apisecret" />
+						</div>
+						<div class="hero__left--button">
+							<button type="submit" id="addBtn" class="btn btn-th">Add</button>
+							<button type="reset" id="cancBtn" class="deleteBtn btn btn-second">Cancel</button>
+						</div>
+					</form>
+				</div>
+				<div class="hero__right">
+					<h2>API Key Manager</h2>
+					<div class="hero__right--check">
+						<label for="getDataChk">Get List From API</label>
+						<input type="checkbox" name="getDataChk" id="getDataChk" />
+					</div>
+					<div class="hero__right--context">
+						<table id="userTable">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th class="username">Username</th>
+									<th class="api">Api Key</th>
+									<th class="secret">Api Secret</th>
+									<th class="headerbtn">Edit</th>
+									<th class="headerbtn">Delete</th>
+								</tr>
+							</thead>
+							<tbody id="tbody">
+							
+
+								<div id="row"></div>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<input type="text" name="username" id="username" />
+		</main>
+		<footer></footer>
+
+		<script src="./assets/js/apiform.js"></script>
+	</body>
+</html>

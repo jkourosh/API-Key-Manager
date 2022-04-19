@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel:ital,wght@0;300;500;800&display=swap');
+
+$font-family-abel: 'Abel', sans-serif;
+
+$lightblue: #3c8dbc;
+$navy: #001f3f;
+$olive: #3d9970;
+$lime: #01ff70;
+$fuchsia: #f012be;
+$maroon: #d81b60;
+$blue: #2d7fae;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$orang-dark: #d75201;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #ffffff;
+$black: #000000;
+$gray: #f4f4f4;
+$gray-: #d4d4d4;
+$gray--: #a7a7a7;
+$gray---: #858991;
+$secondary-color: #47597e;
+$tertiary-color: #dbe6fd;
+$quaternary-color: #b2ab8c;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$light-: #eeeeee;
+$dark: #343a40;
+
+$font-sizes: (
+	xxsm: 0.8rem,
+	xsm: 1.2rem,
+	sm: 1.4rem,
+	md: 1.7rem,
+	mdx: 2.2rem,
+	lg: 2.7rem,
+	lgx: 3rem,
+	lgxx: 4rem,
+);
+
+$font-weights: (
+	regular: 300,
+	medium: 600,
+	bold: 800,
+);
+@function FW($weight) {
+	@return map-get($font-weights, $weight);
+}
+
+@function FS($size) {
+	@return map-get($font-sizes, $size);
+}
+
+@mixin flex-between($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+	align-items: center;
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	line-height: 1;
+	font-family: $font-family-abel;
+	font-size: font-size(sm);
+	color: $black;
+	background-color: $gray-;
+	letter-spacing: 1px;
+	transition: background-color 0.25s color 0.25s;
+}
+
+button,
+span,
+div,
+input {
+	font: inherit;
+	color: inherit;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+// input[type="text"] {
+
+//   }
+
+input[type='text']:disabled {
+	background: $gray;
+}
+
+a {
+	font-size: font-size(xsm);
+	text-decoration: none;
+	text-underline-offset: 0.5rem;
+	color: $secondary-color;
+	font-weight: font-weight(bold);
+}
+
+a:hover {
+	text-decoration: underline solid 2px $secondary-color;
+	transition: all 0.3 ease-in-out;
+}
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+i {
+	font-size: font-size(md);
+}
+
+.btn {
+	background-color: $blue;
+	color: $white;
+	padding: .5rem 1rem;
+	border-radius: 1rem;
+	margin:0 1rem;
+}
+
+.btn-second {
+	background-color: $orang-dark;
+}
+
+header {
+	padding: 4rem;
+	& h1 {
+		font-size: 5rem;
+		font-weight: font-weight(bold);
+		color: $black;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+footer {
+	font-size: font-size(xsm);
+	font-weight: font-weight(bold);
+	font-style: italic;
+	text-align: center;
+	position: fixed;
+	bottom: 0.4rem;
+	margin: 0 auto;
+	width: 100%;
+	color: $tertiary-color;
+}
+
+.container {
+	background-color: $white;
+	padding-top: 10vh;
+	height: 80vh;
+	margin: 0 1rem;
+	bottom: 1rem;
+	
+}
+.hero {
+	@include flex-between(row);
+	justify-content: center;
+	padding: 0 10rem;
+	font-size: FS(md);
+
+	&__left {
+		width: 50%;
+		padding: 0 10rem;
+		&--text {
+			label {
+				display: block;
+				padding: 2rem 0 0.8rem 0;
+				font-weight: FW(medium);
+			}
+			input {
+				border-radius: 0.5rem;
+				width: 80%;
+				line-height: 4rem;
+				background-color: $gray-;
+			}
+		}
+		&--button {
+			@include flex-between(row);
+			justify-content: center;
+		}
+	}
+	&__right {
+		@include flex-between(column);
+		h2 {
+			font-size: font-size(lgxx);
+			font-weight: font-weight(bold);
+			color: $black;
+			padding: 2rem 0;
+			text-align: center;
+		}
+		&--context {
+			background-color: $gray;
+			border-radius: 1rem;
+			font-size: FS(sm);
+			label {
+				display: block;
+			}
+			input {
+				font-size: FS(sm);
+				background-color: $white;
+				border-radius: 0.5rem;
+				width: 100%;
+				line-height: 4rem;
+			}
+			table {
+				margin: 1rem;
+			}
+			th {
+				width: 3rem;
+				padding: 1rem;
+				border-radius: 4px;
+				background-color: $gray-;
+				&:nth-child(1) {
+					width: 1rem;
+				}
+				&:nth-child(2) {
+					width: 10rem;
+				}
+
+				&:nth-child(3),
+				&:nth-child(4) {
+					width: 15rem;
+				}
+				&:nth-child(5),
+				&:nth-child(6) {
+					width: 5rem;
+				}
+			}
+			tr {
+				margin:0 0;
+				padding: 0 0;
+				font-weight: FW(medium);
+				&:nth-child(even) {
+					background-color: $gray;
+				}
+				&:nth-child(odd) {
+					background-color: $light-;
+				}
+			}
+			td{
+				margin:0 0;
+				padding: 0 0;
+			}
+		}
+	}
+}
+#cancBtn {
+	display: none;
+}
