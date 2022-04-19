@@ -2,8 +2,9 @@
 
 # API key Manager Demo
 
-without any library
-To view this visit [Preview](https://jkourosh.github.io/API-Key-Manager/)
+without using any library ...
+
+To view Demo visit [Preview](https://jkourosh.github.io/API-Key-Manager/)
 
 Special thanks to [Dan Salahi](https://github.com/dansalahi)
 
