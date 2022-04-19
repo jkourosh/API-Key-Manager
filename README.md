@@ -1,6 +1,6 @@
 [![GitHub license](https://img.shields.io/github/license/microsoft/Web-Dev-For-Beginners.svg)](https://github.com/microsoft/Web-Dev-For-Beginners/blob/master/LICENSE)
 
-# API key Manager for Demo
+# API key Manager Demo
 
 without any library
 To view this visit [Preview](https://jkourosh.github.io/API-Key-Manager/)
