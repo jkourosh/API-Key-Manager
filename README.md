@@ -1,12 +1,13 @@
 [![GitHub license](https://img.shields.io/github/license/microsoft/Web-Dev-For-Beginners.svg)](https://github.com/microsoft/Web-Dev-For-Beginners/blob/master/LICENSE)
 
-# API key Manager for Demo 
+# API key Manager for Demo
 
+without any library
 To view this visit [Preview](https://jkourosh.github.io/API-Key-Manager/)
 
 Special thanks to [Dan Salahi](https://github.com/dansalahi)
 
-# A project about HTML, CSS, and manipulation using JavaScript 🌵🌱
+# A project about HTML, CSS, and manipulation using Pure JavaScript 🌵🌱
 
 A little HTML, JS and CSS, you can build a web interface, style it, and add an interaction.
 

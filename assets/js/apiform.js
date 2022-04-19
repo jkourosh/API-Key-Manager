@@ -81,12 +81,12 @@ const addRowToTable = (tbody, entries) => {
 		tr.appendChild(td);
 	});
 	td = document.createElement('TD');
-	td.innerHTML = `<button type="button" class="editBtn btn">Edit</button>`;
+	td.innerHTML = `<button type="button" class="editBtn btn btn-table">Edit</button>`;
 	td.addEventListener('click', (e) => editRow(obj));
 	tr.id = 'row' + obj[0];
 	tr.appendChild(td);
 	td = document.createElement('TD');
-	td.innerHTML = `<button type="button" class="deleteBtn btn btn-second">Delete</button>`;
+	td.innerHTML = `<button type="button" class="deleteBtn btn btn-second btn-table">Delete</button>`;
 	td.addEventListener('click', (e) => deleteRow(obj));
 	tr.appendChild(td);
 	tbody.appendChild(tr);

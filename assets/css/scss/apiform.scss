@@ -143,15 +143,20 @@ i {
 .btn {
 	background-color: $blue;
 	color: $white;
-	padding: .5rem 1rem;
+	padding: .5rem 2rem;
 	border-radius: 1rem;
 	margin:0 1rem;
 }
-
+.btn-primary{
+	margin:1rem;
+	
+}
 .btn-second {
 	background-color: $orang-dark;
 }
-
+.btn-table{
+	padding: .5rem 1rem;
+}
 header {
 	padding: 4rem;
 	& h1 {
@@ -207,6 +212,8 @@ footer {
 		&--button {
 			@include flex-between(row);
 			justify-content: center;
+			position: relative;
+			left: -4rem;
 		}
 	}
 	&__right {
