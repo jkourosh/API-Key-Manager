@@ -101,6 +101,7 @@ input {
 	border: none;
 	background-color: transparent;
 	outline: none;
+	padding-left: .5rem;
 }
 
 button {
@@ -111,7 +112,7 @@ button {
 
 input[type='text']:disabled {
 	background: $gray;
-	padding-left: .5rem;
+	
 }
 
 a {
